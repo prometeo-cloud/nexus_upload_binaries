@@ -1,0 +1,7 @@
+---
+- name: Upload files in {{ cache_folder }}
+  command: "curl -v -u {{ nexus_user }}:{{ nexus_user_pwd }} --upload-file {{ item | basename }} {{ nexus_repo_url }}/{{ item | basename }} warn=no"
+  args:
+    chdir: "{{ cache_folder }}"
+  with_fileglob: "{{ cache_folder }}/*"
+...
