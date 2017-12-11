@@ -9,7 +9,7 @@ This role uploads binaries from a folder into Nexus.
 **Feature:** Uploads binaries to Nexus
 - **Given** a Nexus repository server
 - **Given** a folder containing binaries
-- **When** the uplaod is executed
+- **When** the upload is executed
 - **Then** a repository is created in Nexus
 - **Then** the binaries are uploaded to the repository
 
