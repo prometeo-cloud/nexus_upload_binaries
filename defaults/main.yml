@@ -1,9 +1,9 @@
 ---
 tool_name: prometeo
 
-cache_folder:  "/var/cache/{{ tool_name }}"
+cache_folder: "/var/cache/{{ tool_name }}"
 
-nexus_user:     deployment
+nexus_user: deployment
 nexus_user_pwd: deployment123
 
 nexus_repo_url: "http://nexus.repo:8081/content/repositories/{{ tool_name }}/1.0.0"
